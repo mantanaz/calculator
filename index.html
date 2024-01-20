@@ -3,48 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" type="text/css" rel="stylesheet">
-    
-    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+         
+    <title>Calculator</title>
 </head>
 
 <body>
-    <div class="calc">
+    <div class="calculator">
         <h1>Калькулятор чаевых</h1>
-        <form id="form-calc">
-            <label for="input-bill-value" class="input-bill-value">Сумма по счету
-            <input type="text" id="input-bill-value">
+        <form id="form-calculator">
+            <label for="input-bill-value" class="input-bill-value">
+                Сумма по счету
+            <input type="text" id="input-bill-value" minlength="3"; required>
             </label>
-            <label for="select-qual-serv" class="select-qual-serv">
+            <label for="select-quality-service" class="select-quality-service">
                 Качество обслуживания
-                <select id="select-qual-serv">
+                <select id="select-quality-service">
                     <option value="0">Плохое (0%)</option>
-                    <option value="5">Нормальное (10%)</option>
+                    <option value="5">Нормальное (5%)</option>
                     <option value="10">Хорошее (10%)</option>
                     <option value="15">Отличное (15%)</option>
                 </select>
             </label>
-            <label for="amount-people" class="amount-people">
+            <label for="input-qty-people" class="input-qty-people">
                 Количество человек
-                <input type="text" id="amount-people">
+                <input type="text" id="input-qty-people" maxlength="6">
             </label>
-    <div class="button">
-        <button type="submit" class="submit">Посчитать</button>
-        <button type="reset" class="reset">Сбросить</button>
-    </div>
+            <div class="button">
+                <button type="submit" class="submit">Посчитать</button>
+                <button type="reset" class="reset">Сбросить</button>
+            </div>
     <div class="podchet">
         <p class="chaevie">Чаевые:
-            <span class="rub">0Р</span>
+            <span id="tips-value">0Р</span>
             <span>(с каждого)</span>
         </p>
         <p class="vsego">Всего:
-            <span class="rub">0Р</span>
+            <span id="tips-value">0Р</span>
             <span>(с каждого)</span>
         </p>
     </div>
         </form>
     </div>
-
-    <script src="/scripts/script.js"></script>
 </body>
+    <script src="script.js"></script>
 </html>
