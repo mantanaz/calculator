@@ -28,7 +28,7 @@ h1 {
     width: 380px;
 }
 
-.calc {
+.calculator {
     width: 500px;
     height: 800px;
     min-width: 300px;
@@ -38,7 +38,7 @@ h1 {
     background-color: #360160;
 }
 
-.calc h2 {
+.calculator h2 {
     color: #ffdc40;
     font-family: Roboto Condensed;
     font-size: 52px;
@@ -47,13 +47,13 @@ h1 {
     line-height: 90.3%;
 }
 
-#form calc {
+#form calculator {
     display: flex;
     flex-direction: column;
     
 }
 
-#form calc label {
+#form calculator label {
     display: flex;
     flex-direction: column;
 }
@@ -82,7 +82,7 @@ h1 {
     background: #FFF;
 }
 
-.select-qual-serv {
+.select-quality-service {
     display: flex;
     flex-direction: column;
     color: #FFF;
@@ -93,7 +93,7 @@ h1 {
     line-height: normal;
     padding-top: 10px;
 }
-#select-qual-serv {
+#select-quality-service {
     width: 320px;
     color: #000;
     font-family: Roboto Condensed;
@@ -106,7 +106,7 @@ h1 {
     background: #FFF;
 }
 
-.amount-people {
+.input-qty-people {
     display: flex;
     flex-direction: column;
     color: #FFF;
@@ -117,7 +117,7 @@ h1 {
     line-height: normal;
     padding-top: 10px;
 }
-#amount-people {
+#input-qty-people {
     width: 320px;
     color: #000;
     font-family: Roboto Condensed;
